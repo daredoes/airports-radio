@@ -1,0 +1,8 @@
+services:
+  airports-radio:
+    image: ghcr.io/daredoes/airports-radio:latest
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./music:/music:ro
